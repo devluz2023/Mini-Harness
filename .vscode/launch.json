@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Executar main.py (Modo Simulação)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/agent-harness/main.py",
+            "cwd": "${workspaceFolder}/agent-harness",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Executar main.py (Modo Real - Claude)",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/agent-harness/main.py",
+            "cwd": "${workspaceFolder}/agent-harness",
+            "args": ["--claude"],
+            "console": "integratedTerminal"
+        }
+    ]
+}
